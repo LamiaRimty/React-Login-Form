@@ -1,12 +1,13 @@
 body {
-    margin: 0 auto;
-    padding: 25px;
-    font-family: "El Messiri", sans-serif;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
     background-color: #CFFDE1;
     font-weight: 400;
     color:#3D5656;
-    line-height: 1.666;
+    line-height: 1rem;
     text-align: center;
+    align-items: center;
     
   }
   
@@ -19,6 +20,23 @@ body {
     
   }
   .container{
+    margin: 300px;
+    padding: 25px;
     height: 200px;
     width: 200px;
+  }
+  input{
+    height: 40px;
+    width: 250px;
+    margin-bottom: 5px;
+    text-align: center;
+    background-color:#CFFDE1
+  }
+  button{
+    height: 40px;
+    width: 250px;
+    background-color: white;
+    color: #3D5656;
+
+    border-radius: 5px;
   }
