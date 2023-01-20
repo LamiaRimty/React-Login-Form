@@ -1,33 +1,17 @@
 import React from "react";
-import Login from "./Login";
-import Input from "./Input";
+import Form from "./Form";
 
-var isLoggedIn=false;
-
-function renderConditionally(){
-    if(isLoggedIn===true){
-      return  (
-      <h1>Hello</h1>
-      );
-    }
-
-    else{
-        return(
-        <div>
-            <Login/>
-        </div>
-
-     
-        );
-    }
-}
+const currentTime=new Date().getHours();
+console.log(currentTime);
+var userIsRegistered =true;
 
 function App(){
 return(
     <div className="container">
-       {renderConditionally()}
-
-    </div>
-);
-}
+       <Form
+       isRegistered={ userIsRegistered}
+       />
+     </div>
+      );
+    }
 export default App;
